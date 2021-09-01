@@ -1,4 +1,7 @@
 public class addition {
+
+    // This is the addition apex class
+    
     public integer addNumbers(){
         integer a = 10;
     	integer b = 20;
