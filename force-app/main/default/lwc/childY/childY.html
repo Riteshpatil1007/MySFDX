@@ -1,0 +1,19 @@
+<template>
+    <div>
+        <lightning-card title="trackPropertyDemo">
+            <b>Hello {trackParam}</b>
+        </lightning-card><br>
+        <lightning-card title="apiPropertyDemo">
+            Hello {apiParam}
+        </lightning-card><br>
+        <lightning-card title="nonReactivePropertyDemo">
+            Hello {nonReactiveProp}
+        </lightning-card>
+    </div>
+    <br><br>
+    
+    <div>
+        <lightning-button label="Click Me" onclick={handleParamValues}></lightning-button>
+    </div>
+    
+</template>

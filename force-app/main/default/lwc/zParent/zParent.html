@@ -1,0 +1,15 @@
+<template>
+        <div>
+            <c-z-child my-name  = {parentName} 
+                        my-city = {parentCity} 
+                        my-mob = {parentMob}></c-z-child>
+        </div>
+        <div>
+            <lightning-button label="Click me for Change Value" onclick={handleclick}></lightning-button>
+        </div>
+        
+        <div>
+            <lightning-button label="Call Child Method" onclick={handlecall}></lightning-button>
+        </div>        
+    
+</template>

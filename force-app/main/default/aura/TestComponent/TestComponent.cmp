@@ -1,0 +1,35 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" >
+    
+    <aura:attribute name="fnum" type="decimal" />
+    <aura:attribute name="snum" type="decimal" />
+    <aura:attribute name="res" type="decimal" />
+    
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        		<div class="slds-media__figure">  
+                     <lightning:icon iconName="standard:account" alternativeText="Account" title="Account" />	
+        		</div>
+        		<div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span>Calculator with Attribute</span>
+                    </h2>
+                </div>
+        	</header>
+        </div>
+        
+        <div class="slds-card__body slds-card__body_inner">	            
+            <div class="row">
+                    <lightning:input type="number" name="input1" value="{!v.fnum}" label="Enter First number" placeholder="first number..."/>
+                    <lightning:input type="number" name="input2" value="{!v.snum}" label="Enter Second number" placeholder="second number"/>
+                    <lightning:input type="number" name="input3" value="{!v.res}" label="Result" placeholder="result" disabled="true" />
+            </div>
+        </div>
+        <footer class="slds-card__footer">
+            <div class="slds-no-flex">
+        			<button class="slds-button slds-button_neutral" onclick="{!c.addition}">SUM</button>
+        	</div>
+        </footer>
+        </article>
+</aura:component>
